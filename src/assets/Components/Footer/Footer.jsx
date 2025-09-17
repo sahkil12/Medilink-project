@@ -14,10 +14,10 @@ const Footer = () => {
           </div>
           {/* links */}
           <ul className="flex gap-6 px-1 text-xl">
-      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-600'} to={'/'}>Home</NavLink></li>
-      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-600'} to={''}>My Bookings</NavLink></li>
-      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-600'} to={''}>Blogs</NavLink></li>
-      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-600'} to={''}>Contact Us</NavLink></li>
+      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'/'}>Home</NavLink></li>
+      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'myBookings'}>My Bookings</NavLink></li>
+      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'blogs'}>Blogs</NavLink></li>
+      <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'contact'}>Contact Us</NavLink></li>
     </ul>
         </aside>
         <div className="border-b border-b-gray-400 w-[50%] mx-auto "></div>
