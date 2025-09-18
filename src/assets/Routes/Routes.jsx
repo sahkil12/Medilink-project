@@ -5,7 +5,7 @@ import Home from "../Pages/Home";
 import MyBookings from "../Pages/MyBookings";
 import Blogs from "../Pages/Blogs";
 import Contact from "../Pages/Contact";
-
+    
 export const router = createBrowserRouter([
   {
     path: "/",

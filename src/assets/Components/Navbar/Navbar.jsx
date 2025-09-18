@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [theme, setTheme] = useState(()=>{
-        return JSON.parse(localStorage.getItem("theme")) || 'light'
-    })
+   const [theme, setTheme] = useState("light")
     const handleTheme = (e) =>{
         if(e.target.checked){
             setTheme("dark")
@@ -12,7 +10,6 @@ const Navbar = () => {
         else{
             setTheme("light")
         }
-        console.log(theme);
     }
     useEffect(()=>{
         localStorage.setItem("theme", JSON.stringify(theme))
@@ -97,10 +94,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <img src="/public/medilink.png" className="w-15 h-15" alt="" />
-            <Link to={"/"} className="btn btn-ghost font-bold text-3xl">
+            <img src="/public/medilink.png" className="w-10 sm:w-15 h-10 sm:h-15" alt="" />
+            <Link to={"/"} className="btn btn-ghost font-bold text-2xl sm:text-3xl">
               MediLink
-            </Link>
+            </Link> 
           </div>
         </div>
         {/* links */}
