@@ -1,10 +1,9 @@
-{
-  "doctors": [
+ [
     {
       "id": 1,
       "name": "Dr. Sharmin Chowdhury",
       "photo": "https://t3.ftcdn.net/jpg/06/64/62/08/240_F_664620894_KN7WA859syQPK6rwNWBSky1iLwYhb3Gt.jpg",
-      "education": "MBBS, BCS (Health), MACE (USA), MD (Endocrinology, BIRDEM)",
+      "education": "MBBS, BCS (Health), MACE (USA)",
       "specialty": "Thyroid, Diabetes & Hormone Specialist",
       "experience": "10 years",
       "registrationNumber": "REG12345",
@@ -151,4 +150,3 @@
       "detailsRoute": "/doctors/15"
     }
   ]
-}
