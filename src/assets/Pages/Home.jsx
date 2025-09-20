@@ -5,11 +5,15 @@ import { TbStarsFilled } from "react-icons/tb";
 import { FaUsersLine } from "react-icons/fa6";
 import { FaUsersRays } from "react-icons/fa6";
 import CountUp from 'react-countup';
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
     return (
         <div className="space-y-10 md:space-y-20 lg:space-y-30">
+            <Helmet>
+                <title>MediLink | Home</title>
+            </Helmet>
                     <Hero></Hero>
                     <Doctors></Doctors>
                     <div className="text-center space-y-5 my-10 sm:w-3/4 p-8 mx-auto">

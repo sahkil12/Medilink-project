@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigation, useParams } from "react-router-dom";
+import { Link, useNavigate, useNavigation, useParams } from "react-router-dom";
 import Spinner from "../Spinner/Spinner";
 import { CiSquareInfo } from "react-icons/ci";
+import { Helmet } from 'react-helmet';
+import { saveDoctors } from "../DataBase/LocalDataBase";
 
 const DoctorDetails = () => {
   const { regNumber } = useParams();
   const navigation = useNavigation();
   const [doctor, setDoctor] = useState(null);
+  const navigate = useNavigate()
   useEffect(() => {
     fetch("/doctors.json")
       .then((res) => res.json())
@@ -18,10 +21,19 @@ const DoctorDetails = () => {
       });
   }, [regNumber]);
   if (navigation.state === "loading" || doctor === null) {
-    return <Spinner></Spinner>;
+    return <Spinner ></Spinner>;
+  }
+  const handleBooking = ()=>{
+    const added = saveDoctors(doctor)
+    if(added){
+        navigate('/myBookings')
+    }
   }
   return (
     <div className="md:w-3/4 mx-auto my-7 space-y-9">
+         <Helmet>
+                <title>Details Of - {doctor.name} </title>
+            </Helmet>
       {/* start part */}
       <div className="border border-gray-200 rounded-xl py-9 px-5 text-center shadow-lg space-y-6">
         <h2 className="text-4xl font-bold">Doctor’s Profile Details</h2>
@@ -94,11 +106,10 @@ const DoctorDetails = () => {
             </span>{" "}
             Due to high patient volume, we are currently accepting appointments
             for today only. We appreciate your understanding and cooperation.
-          </h2>
-
-          <Link to={"/myBookings"} >
-            <button className="w-full py-3 my-4 rounded-full text-xl font-bold bg-green-400 hover:bg-green-500">Book Appointment Now</button>
-          </Link>
+          </h2>    
+            <button
+            onClick={handleBooking}
+            className="w-full py-3 my-4 rounded-full text-xl font-bold bg-green-400 hover:bg-green-500 duration-500">Book Appointment Now</button>
       </div>
     </div>
   );
