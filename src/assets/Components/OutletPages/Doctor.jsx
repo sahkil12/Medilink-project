@@ -19,7 +19,7 @@ const Doctor = ({ doctor }) => {
             <div className="border border-neutral-300 border-dashed"> </div>
             <h2 className="flex items-center gap-1 text-neutral-600 my-3 font-medium text-xl"><span className="text-2xl">®</span>{registrationNumber}</h2>
           <Link to={`doctor/${registrationNumber}`}>
-          <button className=" my-4 border-2 border-green-500 text-green-500 hover:text-black rounded-full font-bold text-xl py-3 hover:bg-[#0ad80acc] w-full">View Details</button></Link>
+          <button className="duration-400 my-4 border-2 border-green-500 text-green-500 hover:text-black rounded-full font-bold text-xl py-3 hover:bg-[#0ad80acc] w-full">View Details</button></Link>
       </div>
     </div>
   );
