@@ -5,6 +5,7 @@ import Home from "../Pages/Home";
 import MyBookings from "../Pages/MyBookings";
 import Blogs from "../Pages/Blogs";
 import Contact from "../Pages/Contact";
+import DoctorDetails from "../Components/OutletPages/DoctorDetails";
     
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
         {
             path:'myBookings',
             element:<MyBookings></MyBookings>
+        },
+        {
+            path:'doctor/:regNumber',
+            element:<DoctorDetails></DoctorDetails>
         },
         {
             path:'blogs',

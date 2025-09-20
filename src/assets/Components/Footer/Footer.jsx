@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center p-5">
+      <footer className="footer footer-horizontal footer-center p-5 border-t-2 border-gray-200">
         <aside>
           <div className="flex items-center justify-center my-7">
             <img src="/public/medilink.png" className="w-15 h-15" alt="" />

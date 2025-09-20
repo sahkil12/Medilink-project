@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Doctor = ({ doctor }) => {
-  console.log(doctor);
-  const { photo, name, experience,education,registrationNumber } = doctor;
+  const { photo, name, experience,education,registrationNumber} = doctor;
   return (
     <div className="card p-8 bg-base-100 border border-neutral-200 shadow-md">
       <figure className="">
@@ -17,9 +18,8 @@ const Doctor = ({ doctor }) => {
             </div>
             <div className="border border-neutral-300 border-dashed"> </div>
             <h2 className="flex items-center gap-1 text-neutral-600 my-3 font-medium text-xl"><span className="text-2xl">®</span>{registrationNumber}</h2>
-        <div className="my-3">
-          <button className="border-2 border-green-500 text-green-500 hover:text-black rounded-full font-bold text-xl py-3 hover:bg-[#0ad80acc] w-full">View Details</button>
-        </div>
+          <Link to={`doctor/${registrationNumber}`}>
+          <button className=" my-4 border-2 border-green-500 text-green-500 hover:text-black rounded-full font-bold text-xl py-3 hover:bg-[#0ad80acc] w-full">View Details</button></Link>
       </div>
     </div>
   );
