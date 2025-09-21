@@ -13,7 +13,7 @@ const Footer = () => {
             </Link>
           </div>
           {/* links */}
-          <ul className="flex gap-6 px-1 text-xl">
+          <ul className="flex gap-6 px-1 text-xl flex-col md:flex-row">
       <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'/'}>Home</NavLink></li>
       <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'myBookings'}>My Bookings</NavLink></li>
       <li><NavLink className={({isActive})=> isActive ? 'font-bold text-green-600' :'font-semibold text-neutral-500'} to={'blogs'}>Blogs</NavLink></li>

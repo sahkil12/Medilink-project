@@ -154,7 +154,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-6">
-          <Link className=" md:px-7 px-5 py-2 md:py-3 rounded-full font-bold bg-[#16da16da] hover:bg-[#11bd11da] md:text-lg ">
+          <Link className="hidden sm:flex md:px-7 px-5 py-2 md:py-3 rounded-full font-bold bg-[#16da16da] hover:bg-[#11bd11da] md:text-lg ">
             Emergency
           </Link>
 

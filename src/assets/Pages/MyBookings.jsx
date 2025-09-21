@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { getDoctors, removeDoctor } from "../Components/DataBase/LocalDataBase";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import EmptyPage from "../Components/Errorpage/EmptyPage";
+import { useNavigation } from "react-router-dom";
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', 'gray', 
     'tomato','#006A67', 'blueviolet', 'cadetblue','#59AC77', '#5D2F77', '#4FB7B3'
 ];
@@ -21,6 +22,7 @@ const TriangleBar = (props) => {
 
 const MyBookings = () => {
   const [bookedDoctors, setBookedDoctors] = useState([]);
+  const navigation = useNavigation()
   useEffect(() => {
       setBookedDoctors(getDoctors());
     }, []);
@@ -37,7 +39,9 @@ const MyBookings = () => {
     if(bookedDoctors.length <= 0){
         return <EmptyPage></EmptyPage>
     }
-    
+    if(navigation.state === 'loading'){
+        return <Spinner></Spinner>
+    }
   return (
     
     <div className="sm:w-10/12 md:w-[80%] mx-auto space-y-7">

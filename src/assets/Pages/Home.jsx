@@ -19,7 +19,7 @@ const Home = () => {
                     <div className="text-center space-y-5 my-10 sm:w-3/4 p-8 mx-auto">
                         <h2 className="text-[40px] font-bold">We Provide Best Medical Services</h2>
                         <p className="opacity-85">Access trusted, experienced doctors for everything from routine check-ups to urgent care — quality medical services when you need them.</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
                {/* box - 1 */}
                             <div className="border border-gray-300 my-7 rounded-xl py-6 px-10 space-y-7 text-start">
                                 {/* icon */}
