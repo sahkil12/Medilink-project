@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className="footer footer-horizontal footer-center p-5 border-t-2 border-gray-200">
         <aside>
           <div className="flex items-center justify-center my-7">
-            <img src="/public/medilink.png" className="w-15 h-15" alt="" />
+            <img src="/medilink.png" className="w-15 h-15" alt="" />
             <Link to={"/"} className="btn btn-ghost font-bold text-4xl">
               MediLink
             </Link>

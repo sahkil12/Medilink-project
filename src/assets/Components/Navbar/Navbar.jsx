@@ -94,7 +94,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center">
-            <img src="/public/medilink.png" className="w-10 sm:w-15 h-10 sm:h-15" alt="" />
+            <img src="/medilink.png" className="w-10 sm:w-15 h-10 sm:h-15" alt="" />
             <Link to={"/"} className="btn btn-ghost font-bold text-2xl sm:text-3xl">
               MediLink
             </Link> 

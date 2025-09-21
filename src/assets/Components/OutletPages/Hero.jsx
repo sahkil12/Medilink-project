@@ -1,3 +1,4 @@
+
 const Hero = () => {
     return (
             <section className="">
@@ -14,8 +15,8 @@ const Hero = () => {
         {/* image */}
         <div className="flex flex-col md:flex-row gap-5 justify-center my-5 md:my-10">
 
-               <img className="w-full  rounded-xl object-cover h-100" src="/public/images/bannerImg-1.png" alt="" /> 
-               <img className="w-full rounded-xl object-cover h-100" src="/public/images/bannerImg-2.png" alt="" /> 
+               <img className="w-full  rounded-xl object-cover h-100" src="/images/bannerImg-1.png" alt="" /> 
+               <img className="w-full rounded-xl object-cover h-100" src="/images/bannerImg-2.png" alt="" /> 
 
         </div>
         </div>

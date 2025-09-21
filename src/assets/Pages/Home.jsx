@@ -25,7 +25,7 @@ const Home = () => {
                                 {/* icon */}
                                 <FaAddressCard size={50} ></FaAddressCard>
                                 <h2 className="font-bold text-6xl">
-                                    <CountUp end={199} duration={4} ></CountUp>+
+                                    <CountUp end={199} duration={20} ></CountUp>+
                                 </h2>
                                 <h4 className="text-2xl font-semibold text-neutral-500">Total Doctors</h4>
                             </div>
@@ -34,7 +34,7 @@ const Home = () => {
                                 {/* icon */}
                                <TbStarsFilled size={50}></TbStarsFilled>
                                 <h2 className="font-bold text-6xl">
-                                     <CountUp end={467} duration={4} ></CountUp>+
+                                     <CountUp end={467} duration={20} ></CountUp>+
                                 </h2>
                                 <h4 className="text-2xl font-semibold text-neutral-500">Total Review</h4>
                             </div>
@@ -43,7 +43,7 @@ const Home = () => {
                                 {/* icon */}
                                 <FaUsersLine size={50}></FaUsersLine>
                                 <h2 className="font-bold text-6xl">
-                                     <CountUp end={1909} duration={4} ></CountUp>+
+                                     <CountUp end={1909} duration={20} ></CountUp>+
                                     </h2>
                                 <h4 className="text-2xl font-semibold text-neutral-500">Patients</h4>
                             </div>
@@ -52,7 +52,7 @@ const Home = () => {
                                 {/* icon */}
                                 <FaUsersRays size={50}></FaUsersRays>
                                 <h2 className="font-bold text-6xl">
-                                     <CountUp end={300} duration={4} ></CountUp>+
+                                     <CountUp end={300} duration={20} ></CountUp>+
                                 </h2>
                                 <h4 className="text-2xl font-semibold text-neutral-500">Total Stuff</h4>
                             </div>

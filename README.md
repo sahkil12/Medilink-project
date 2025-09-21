@@ -1,12 +1,17 @@
-# React + Vite
+Live Link - [(https://storied-cranachan-1fdcd3.netlify.app/)]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# MediLink
+A simple and professional medical web app to connect patients with trusted doctors and book appointments online.
 
-Currently, two official plugins are available:
+## Features
+- View verified doctors across multiple specialties
+- Check doctor profiles (education, experience, registration number, Fee, WorAt)
+- Book and manage appointments online
+- Light/Dark mode support
+- Read Doctor related blogs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Built With
+- React (Frontend)
+- TailwindCSS/DaisyUI for styling
+- JSON for doctor data
+- Use React Router And Use Npm Item 
